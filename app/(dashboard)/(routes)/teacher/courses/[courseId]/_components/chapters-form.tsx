@@ -28,7 +28,7 @@ interface ChaptersFormProps {
 }
 
 const formSchema = z.object({
-  title: z.string().trim().min(1, "Chapters is required"),
+  title: z.string().trim().min(1, "Разделы обязательны"),
 });
 
 export const ChaptersForm = ({ courseId, initialData }: ChaptersFormProps) => {
@@ -143,7 +143,7 @@ export const ChaptersForm = ({ courseId, initialData }: ChaptersFormProps) => {
             !initialData.chapters.length && "text-slate-500 italic"
           )}
         >
-          {!initialData.chapters.length && "No chapters"}
+          {!initialData.chapters.length && "Нет разделов"}
           <ChaptersList
             onEdit={onEdit}
             onReorder={onReorder}

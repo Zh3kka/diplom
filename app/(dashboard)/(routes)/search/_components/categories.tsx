@@ -5,12 +5,13 @@ import { Category } from "@prisma/client";
 import {
   FcEngineering,
   FcFilm,
-  FcMultipleDevices,
   FcSportsMode,
   FcMusic,
-  FcOldTimeCamera,
-  FcSalesPerformance,
-  FcFilmReel,
+  FcCalculator,
+  FcAddressBook,
+  FcCommandLine,
+  FcLandscape,
+  FcFaq,
 } from "react-icons/fc";
 
 import { CategoryItem } from "./category-item";
@@ -21,12 +22,12 @@ interface CategoriesProps {
 
 const iconMap: Record<Category["name"], IconType> = {
   Музыка: FcMusic,
-  "1С": FcOldTimeCamera,
+  "1С": FcAddressBook,
   "Искусственный интелект": FcSportsMode,
-  Бухгалетрия: FcSalesPerformance,
-  Программирование: FcMultipleDevices,
-  Спорт: FcFilmReel,
-  "Английский язык": FcFilm,
+  Бухгалетрия: FcCalculator,
+  Программирование: FcCommandLine,
+  Спорт: FcLandscape,
+  "Английский язык": FcFaq,
   "Техника безопасности": FcEngineering,
 };
 

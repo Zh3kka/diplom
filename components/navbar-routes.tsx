@@ -25,7 +25,7 @@ export const NavbarRoutes = () => {
         </div>
       )}
 
-      <div className="flex ml-auto gap-x-2">
+      <div className="flex ml-auto gap-x-2 z-[1000]">
         {isTeacherPage || isCoursePage ? (
           <Link href="/">
             <Button size="sm" variant="ghost">
@@ -36,7 +36,7 @@ export const NavbarRoutes = () => {
         ) : isTeacher(userId) ? (
           <Link href="/teacher/courses">
             <Button size="sm" variant="ghost">
-              Админ мод
+              Преподовательский режим
             </Button>
           </Link>
         ) : null}

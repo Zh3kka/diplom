@@ -48,7 +48,7 @@ export const SearchInput = () => {
   }, [currentCategoryId, debounceValue, pathname, router]);
 
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <Search className="absolute w-4 h-4 top-3 left-3 text-slate-600" />
 
       <Input
